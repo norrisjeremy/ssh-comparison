@@ -18,9 +18,9 @@ platforms:
 
 protocols:
     cipher:
-        - aes256-gcm@openssh.coom
+        - aes256-gcm@openssh.com
         - AEAD_AES_256_GCM
-        - aes128-gcm@openssh.coom
+        - aes128-gcm@openssh.com
         - AEAD_AES_128_GCM
         - aes256-ctr
         - aes256-cbc

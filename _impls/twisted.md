@@ -6,8 +6,8 @@ license: "[MIT](https://github.com/twisted/twisted/blob/trunk/LICENSE)"
 first-release:
     date: 2002-07-07    # Conch renamed from twisted.secsh
 latest-release:
-    version: 2024.7.0
-    date: 2024-08-08
+    version: 2024.11.0
+    date: 2024-12-02
 changelog: https://github.com/twisted/twisted/blob/trunk/NEWS.rst
 client: yes
 server: yes
@@ -21,10 +21,10 @@ protocols:
     cipher:
         - 3des-cbc
         - 3des-ctr
-        - blowfish-cbc
-        - blowfish-ctr
-        - cast128-cbc
-        - cast128-ctr
+        #- blowfish-cbc                 # removed in 2024.10.0
+        #- blowfish-ctr                 # removed in 2024.10.0
+        #- cast128-cbc                  # removed in 2024.10.0
+        #- cast128-ctr                  # removed in 2024.10.0
         - aes128-cbc
         - aes192-ctr
         - aes256-cbc
@@ -45,6 +45,8 @@ protocols:
         - ssh-ed25519                    # since 21.2.0
         - rsa-sha2-256                   # since 22.4.0
         - rsa-sha2-512                   # since 22.4.0
+        - sk-ecdsa-sha2-nistp256@openssh.com # since 24.10.0
+        - sk-ssh-ed25519@openssh.com     # since 24.10.0
 
     # See: https://github.com/twisted/twisted/blob/2a33824557ed65d2241a51d6bba07ac76521b50f/src/twisted/conch/ssh/_kex.py#L178
     kex:

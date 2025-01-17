@@ -6,8 +6,8 @@ license: "[BSD style](https://github.com/mwiede/jsch/blob/master/LICENSE.txt)"
 #first-release:
 #    date: YYYY-MM-DD
 latest-release:
-    version: 0.2.20
-    date: 2024-09-17
+    version: 0.2.22
+    date: 2025-01-09
 changelog: https://github.com/mwiede/jsch/blob/master/ChangeLog.md
 client: yes
 server: no
@@ -90,6 +90,10 @@ protocols:
         - ext-info-s
         - kex-strict-c-v00@openssh.com
         - kex-strict-s-v00@openssh.com
+        - mlkem768x25519-sha256
+        - mlkem768nistp256-sha256
+        - mlkem1024nistp384-sha384
+        - sntrup761x25519-sha512
         - sntrup761x25519-sha512@openssh.com
     mac:
         - hmac-md5

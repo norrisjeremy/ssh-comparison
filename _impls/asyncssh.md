@@ -6,8 +6,8 @@ license: "[EPL v2.0](https://www.eclipse.org/legal/epl-2.0/faq.php)"
 first-release:
     date: 2013-09-14
 latest-release:
-    version: 2.18.0
-    date: 2024-10-26
+    version: 2.19.0
+    date: 2024-12-12
 changelog: https://asyncssh.readthedocs.io/en/latest/changes.html
 client: yes
 server: yes

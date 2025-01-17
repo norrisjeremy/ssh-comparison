@@ -6,8 +6,8 @@ license: "[MIT license](https://github.com/sshnet/SSH.NET/blob/develop/LICENSE)"
 first-release:
     date: 2010-09-16
 latest-release:
-    version: 2024.1.0
-    date: 2024-06-28
+    version: 2024.2.0
+    date: 2024-11-11
 changelog: https://github.com/sshnet/SSH.NET/releases
 client: yes
 server: no
@@ -20,23 +20,32 @@ protocols:
         - aes128-cbc
         - aes192-cbc
         - aes256-cbc
-        - blowfish-cbc
-        - twofish-cbc
-        - twofish192-cbc
-        - twofish128-cbc
-        - twofish256-cbc
-        - arcfour
-        - arcfour128
-        - arcfour256
-        - cast128-cbc
+        #- blowfish-cbc                 # removed in 2024.2.0
+        #- twofish-cbc                  # removed in 2024.2.0
+        #- twofish192-cbc               # removed in 2024.2.0
+        #- twofish128-cbc               # removed in 2024.2.0
+        #- twofish256-cbc               # removed in 2024.2.0
+        #- arcfour                      # removed in 2024.2.0
+        #- arcfour128                   # removed in 2024.2.0
+        #- arcfour256                   # removed in 2024.2.0
+        #- cast128-cbc                  # removed in 2024.2.0
         - aes128-ctr
         - aes192-ctr
         - aes128-gcm@openssh.com
         - aes256-gcm@openssh.com
+        - chacha20-poly1305@openssh.com # since 2024.2.0
     compression:
         - none
         - zlib@openssh.com
     hostkey:
+        - ssh-ed25519-cert-v01@openssh.com         # since 2024.2.0
+        - ecdsa-sha2-nistp256-cert-v01@openssh.com # since 2024.2.0
+        - ecdsa-sha2-nistp384-cert-v01@openssh.com # since 2024.2.0
+        - ecdsa-sha2-nistp521-cert-v01@openssh.com # since 2024.2.0
+        - rsa-sha2-512-cert-v01@openssh.com        # since 2024.2.0
+        - rsa-sha2-256-cert-v01@openssh.com        # since 2024.2.0
+        - ssh-rsa-cert-v01@openssh.com             # since 2024.2.0
+        - ssh-dss-cert-v01@openssh.com             # since 2024.2.0
         - ssh-ed25519
         - ecdsa-sha2-nistp256
         - ecdsa-sha2-nistp384
@@ -60,22 +69,22 @@ protocols:
         - kex-strict-c-v00@openssh.com
         - kex-strict-s-v00@openssh.com
     mac:
-        - hmac-md5
-        - hmac-md5-96
+        #- hmac-md5                      # removed in 2024.2.0
+        #- hmac-md5-96                   # removed in 2024.2.0
         - hmac-sha1
-        - hmac-sha1-96
+        #- hmac-sha1-96                  # removed in 2024.2.0
         - hmac-sha2-256
-        - hmac-sha2-256-96
+        #- hmac-sha2-256-96              # removed in 2024.2.0
         - hmac-sha2-512
-        - hmac-sha2-512-96
+        #- hmac-sha2-512-96              # removed in 2024.2.0
         #- hmac-ripemd160                # removed in 2024.0.0
         #- hmac-ripemd160@openssh.com    # removed in 2024.0.0
         - hmac-sha2-256-etm@openssh.com
         - hmac-sha2-512-etm@openssh.com
         - hmac-sha1-etm@openssh.com
-        - hmac-sha1-96-etm@openssh.com
-        - hmac-md5-etm@openssh.com
-        - hmac-md5-96-etm@openssh.com
+        #- hmac-sha1-96-etm@openssh.com  # removed in 2024.2.0
+        #- hmac-md5-etm@openssh.com      # removed in 2024.2.0
+        #- hmac-md5-96-etm@openssh.com   # removed in 2024.2.0
     userauth:
         - publickey
         - password

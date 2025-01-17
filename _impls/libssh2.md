@@ -6,8 +6,8 @@ license: "[BSD style](https://libssh2.org/license.html)"
 first-release:
     date: 2004-12-08    # version 0.1, initial release, date from repository
 latest-release:
-    version: 1.11.0
-    date: 2023-05-30
+    version: 1.11.1
+    date: 2024-10-16
 changelog: https://libssh2.org/changes.html
 client: yes
 server: no
@@ -29,13 +29,14 @@ protocols:
         - 3des-cbc
         - aes128-gcm@openssh.com
         - aes256-gcm@openssh.com
+        - chacha20-poly1305@openssh.com # added in 1.11.1
     compression:
         - zlib
         - zlib@openssh.com  # added in 1.4.3
         - none
     hostkey:
         - ssh-rsa
-        - ssh-dss
+        - ssh-dss                                     # disabled by default since 1.11.1
         - rsa-sha2-256
         - rsa-sha2-512
         - ecdsa-sha2-nistp256
@@ -45,6 +46,8 @@ protocols:
         - sk-ecdsa-sha2-nistp256@openssh.com
         - sk-ssh-ed25519@openssh.com
         - ssh-rsa-cert-v01@openssh.com
+        - rsa-sha2-256-cert-v01@openssh.com           # added in 1.11.1
+        - rsa-sha2-512-cert-v01@openssh.com           # added in 1.11.1
         - ecdsa-sha2-nistp256-cert-v01@openssh.com
         - ecdsa-sha2-nistp384-cert-v01@openssh.com
         - ecdsa-sha2-nistp521-cert-v01@openssh.com
@@ -65,6 +68,8 @@ protocols:
         - curve25519-sha256
         - curve25519-sha256@libssh.org
         - ext-info-c
+        - kex-strict-c-v00@openssh.com         # added in 1.11.1
+        - kex-strict-s-v00@openssh.com         # added in 1.11.1
     mac:
         - hmac-sha2-256
         - hmac-sha2-512

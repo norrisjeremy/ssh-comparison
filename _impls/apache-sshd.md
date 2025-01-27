@@ -6,8 +6,8 @@ license: "[Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)"
 first-release:
     date: 2009      # according to Wikipedia
 latest-release:
-    version: 2.13.2
-    date: 2024-08-09
+    version: 2.14.0
+    date: 2024-10-04
 changelog: "https://github.com/apache/mina-sshd/blob/master/CHANGES.md"
 client: yes
 server: yes
@@ -66,6 +66,7 @@ protocols:
         - curve25519-sha256
         - curve25519-sha256@libssh.org
         - curve448-sha512
+        - sntrup761x25519-sha512
         - sntrup761x25519-sha512@openssh.com
     mac:
         - hmac-md5

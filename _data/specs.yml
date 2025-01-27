@@ -376,10 +376,18 @@ draft-ietf-secsh-filexfer-02:
     url: https://tools.ietf.org/html/draft-ietf-secsh-filexfer-02
     title: "SSH File Transfer Protocol [ expired 2002-04-01 ]"
 
-draft-josefsson-ntruprime-ssh-03:
-    name: draft-josefsson-ntruprime-ssh-03
-    url: https://tools.ietf.org/html/draft-josefsson-ntruprime-ssh-03.html
-    title: "Secure Shell (SSH) Key Exchange Method Using Hybrid Streamlined NTRU Prime sntrup761 and X25519 with SHA-512: sntrup761x25519-sha512 [ expired 2025-02-18 ]"
+draft-ietf-sshm-chacha20-poly1305-00:
+    name: draft-ietf-sshm-chacha20-poly1305-00
+    url: https://tools.ietf.org/html/draft-ietf-sshm-chacha20-poly1305-00.html
+    title: "Secure Shell (SSH) authenticated encryption cipher: chacha20-poly1305 [ expired 2025-07-10 ]"
+    protocols:
+        cipher:
+            - chacha20-poly1305
+
+draft-ietf-sshm-ntruprime-ssh-01:
+    name: draft-ietf-sshm-ntruprime-ssh-01
+    url: https://datatracker.ietf.org/doc/html/draft-ietf-sshm-ntruprime-ssh-01.html
+    title: "Secure Shell (SSH) Key Exchange Method Using Hybrid Streamlined NTRU Prime sntrup761 and X25519 with SHA-512: sntrup761x25519-sha512 [ expired 2025-06-12 ]"
     protocols:
         kex:
             - sntrup761x25519-sha512
@@ -395,10 +403,10 @@ draft-kampanakis-curdle-ssh-pq-ke-01:
             - ecdh-nistp521-kyber-1024r3-sha512-d00@openquantumsafe.org
             - x25519-kyber-512r3-sha256-d00@amazon.com
 
-draft-kampanakis-curdle-ssh-pq-ke-04:
-    name: draft-kampanakis-curdle-ssh-pq-ke-04
-    url: https://tools.ietf.org/html/draft-kampanakis-curdle-ssh-pq-ke-04.html
-    title: "PQ/T Hybrid Key Exchange in SSH [ expired 2025-02-25 ]"
+draft-kampanakis-curdle-ssh-pq-ke-05:
+    name: draft-kampanakis-curdle-ssh-pq-ke-05
+    url: https://tools.ietf.org/html/draft-kampanakis-curdle-ssh-pq-ke-05.html
+    title: "PQ/T Hybrid Key Exchange in SSH [ expired 2025-06-08 ]"
     protocols:
         kex:
             - mlkem768nistp256-sha256

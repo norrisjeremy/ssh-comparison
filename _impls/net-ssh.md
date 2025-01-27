@@ -6,8 +6,8 @@ license: "[MIT style](https://github.com/net-ssh/net-ssh/blob/master/LICENSE.txt
 #first-release:
 #    date: YYYY-MM-DD
 latest-release:
-    version: 7.2.3
-    date: 2024-04-02
+    version: 7.3.0
+    date: 2024-10-02
 changelog: https://github.com/net-ssh/net-ssh/blob/master/CHANGES.txt
 client: yes
 server: no
@@ -15,6 +15,8 @@ library: client
 
 protocols:
     cipher:
+        - aes128-gcm@openssh.com
+        - aes256-gcm@openssh.com
         - chacha20-poly1305@openssh.com
         - 3des-cbc                      # deprecated in 6.0, will be removed in 8.0
         - 3des-ctr                      # deprecated in 6.0, will be removed in 8.0

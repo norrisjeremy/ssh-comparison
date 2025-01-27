@@ -6,8 +6,8 @@ license: "[MIT style](https://github.com/mkj/dropbear/blob/master/LICENSE)"
 first-release:
     date: 2003-04-06    # according to CHANGES file
 latest-release:
-    version: 2024.85
-    date: 2024-04-25
+    version: 2024.86
+    date: 2024-10-22
 changelog: https://matt.ucc.asn.au/dropbear/CHANGES
 client: yes
 server: yes
